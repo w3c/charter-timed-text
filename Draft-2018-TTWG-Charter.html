@@ -6,7 +6,7 @@
       Charter</title>
     <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css"
 
-      media="screen">
+      a="" media="screen">
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/Guide/pubrules-style.css">
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
     <style type="text/css">
@@ -120,7 +120,6 @@
             </tr>
           </tbody>
         </table>
-       
       </section>
       <section id="scope" class="scope">
         <h2>Scope</h2>
@@ -132,23 +131,30 @@
             Accessibility User Requirements</a>. Such formats MAY also be
           useable for broadcast production and exchange and MUST be useable in
           the context of HTML.</p>
-        <p>The Group will:</p>
+        <p>The Group SHOULDl:</p>
         <ol>
           <li>Publish a Recommendation for a new <a href="https://www.w3.org/TR/ttml2/">Timed
               Text Markup Language (TTML) 2</a> specification. In the process of
-            producing this new revision, the Group WILL:
+            producing this new revision, the Group SHOULD:
             <ol type="a">
               <li>Address any issues found during the development of a Simple
                 Delivery Profile for Closed Captions.</li>
               <li>Consider for adoption features from existing formats, such as
                 CEA608 or CEA708, or developed by groups such as SMPTE, DECE and
                 EBU.</li>
-              <li>Seek backward compatibility with TTML 1 whenever possible.</li>
-              <li>Will provide a mapping with HTML5/CSS3, including describing
-                TTML intermediate synchronic document as HTML5 document
-                fragment, and understanding how the presentation syntax and
-                semantics relate to CSS3.</li>
-              <li>should address the <a href="https://www.w3.org/TR/media-accessibility-reqs/">Media
+              <li>Consider backward compatibility with TTML 1 such that: <br>
+                - A conforming TTML1 <a href="https://www.w3.org/TR/ttml2/#terms-timed-text-content-document-instance">content
+                  document instance</a> is a conforming TTML2 <a href="https://www.w3.org/TR/ttml2/#terms-timed-text-content-document-instance">content
+                  document instance</a>.<br>
+                - A conforming TTML2 processor processes a conforming TTML1 <a
+
+                  href="https://www.w3.org/TR/ttml2/#terms-timed-text-content-document-instance">content
+                  document instance</a> such that the output produced by the
+                TTML2 processor is within the variations allowed per TTML1;
+                however, it may emit warnings if it encounters deprecated
+                features.</li>
+              <li>Facilitate mapping to HTML5/CSS3.</li>
+              <li>Should address the <a href="https://www.w3.org/TR/media-accessibility-reqs/">Media
                   Accessibility User Requirements</a>.</li>
             </ol>
           </li>
@@ -156,7 +162,7 @@
               Profiles for Internet Media Subtitles and Captions 1.0.1
               (IMSC1.0.1)</a> and <a href="https://www.w3.org/TR/ttml-imsc1.1/">TTML
               Profiles for Internet Media Subtitles and Captions 1.1 (IMSC1.1)</a>
-            specifications appropriate for worldwide subtitling applications,
+            specifications subtitle and caption delivery applications worldwide,
             including dialog language translation, content description, captions
             for deaf and hard of hear, based on <a href="http://www.w3.org/TR/2016/REC-ttml-imsc1-20160421/">TTML
               Profiles for Internet Media Subtitles and Captions 1.0 (IMSC1)</a>,
@@ -169,7 +175,7 @@
             textual audio descriptions for speech synthesis. The Group is
             expected to produce annual updates for the Recommendation with
             previously unspecified features. In the process of producing the
-            specification, the Group WILL:
+            specification, the Group SHOULD:
             <ol type="a">
               <li>Address any issues found in <a href="https://dvcs.w3.org/hg/text-tracks/raw-file/default/webvtt/webvtt.html">WebVTT:
                   The Web Video Text Tracks Format</a> produced by the Web Media
@@ -181,11 +187,6 @@
                   Accessibility User Requirements</a>.</li>
             </ol>
           </li>
-          <li> Finalyse a semantic mapping between TTML and WebVTT in order to
-            facilitate browser implementation and market adoption. </li>
-          <li>Maintain a simple constrained profile for delivery of closed
-            captions for video content ("TTML Simple Delivery Profile for Closed
-            Captions (US)") for TTML.</li>
           <li>Maintain TTML 1 and IMSC1 Recommendations as needed.</li>
           <li>Produce other technical reports (Notes) on aspects of TTML
             processing as appropriate.</li>
