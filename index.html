@@ -125,10 +125,12 @@
           useable for broadcast production and exchange and MUST be useable in
           the context of HTML.</p>
         <p>The Group SHOULD:</p>
-        <ol class='todo'>
-          <li>Publish a Recommendation for a new <a href="https://www.w3.org/TR/ttml2/">Timed
-              Text Markup Language 2 (TTML2)</a> specification. In the process
-            of producing this new revision, the Group SHOULD:
+        <ol>
+          <li>Publish new versions of the
+              <a href="https://www.w3.org/TR/ttml/">Timed
+              Text Markup Language (TTML)</a> specification, consisting of 
+              Recommendations and registries.
+              In the process of producing these new versions, the Group SHOULD:
             <ol type="a">
               <li>Address any issues found during the development of a Simple
                 Delivery Profile for Closed Captions.</li>
@@ -147,8 +149,15 @@
                 however, it may emit warnings if it encounters deprecated
                 features.</li>
               <li>Facilitate mapping to HTML5/CSS3.</li>
-              <li>Should address the <a href="https://www.w3.org/TR/media-accessibility-reqs/">Media
+              <li>Address the <a href="https://www.w3.org/TR/media-accessibility-reqs/">Media
                   Accessibility User Requirements</a>.</li>
+            </ol>
+            In the process of producing these new revisions, the Group MAY:
+            <ol type="a" start="6">
+              <li>Specify new functionality in new Recommendations limited in
+                scope to a particular subject area, for example live
+                contribution, 360º presentation etc.</li>
+              <li>Move existing functionality into new Recommendations.</li>
             </ol>
           </li>
           <li>Publish Recommendations of new versions of <a href="https://www.w3.org/TR/ttml-imsc1.0.1/">TTML
@@ -189,12 +198,20 @@
         </ol>
         <div>
           <h3>Success Criteria</h3>
-          <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each of feature defined in the specification.</p>
-          <p>Each specification should contain a section detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
-          <p>Testing plans for each specification, starting from the earliest drafts.</p>
-          <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
-            recommendations for maximising accessibility in implementations.</p>
-          <p>To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
+          <p>In order to advance to 
+            <a href="https://www.w3.org/Consortium/Process/#RecsPR"
+            title="Proposed Recommendation">Proposed Recommendation</a>,
+            each Recommendation track technical report is expected to have
+            <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a>
+            of each of feature defined in the technical report.</p>
+          <p>Each Recommendation track technical report:</p>
+          <ul>
+            <li>should contain a section detailing all known security and privacy implications for implementers, Web authors, and end users.</li>
+            <li>should have an associated testing plan, starting from the earliest drafts.</li>
+            <li>should contain a section on accessibility that describes the benefits and impacts, including ways that features defined in the technical report can be used to address them, and
+            recommendations for maximising accessibility in implementations.</li>
+          </ul>
+          <p>To promote interoperability, all normative changes made to technical reports should have associated <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
         </div>
       </section>
       <section id="deliverables">
@@ -209,6 +226,29 @@
         <div id="normative">
           <h3> Normative Specifications </h3>
           <dl class='todo'>
+            <dt class="spec"><a href="https://www.w3.org/TR/ttml3/">Timed Text
+                Markup Language 3 (TTML3)<br>
+              </a></dt>
+            <dd>This specification defines a content type that
+              represents timed text media for the purpose of interchange among authoring, distribution and playback systems. 
+              Timed text is textual
+              information that is intrinsically or extrinsically associated with
+              timing information. </dd>
+            <dd>
+              <p class="draft-status"><b>Draft state:</b> <i><a href="https://w3c.github.io/ttml3/">Editor's
+                    Draft</a></i></p>
+              <p class="milestone"><b>Expected completion: [Q4-2019]</b> </p>
+            </dd>
+            <dd><b>Adopted Working Draft:</b> Timed
+              Text Markup Language 3 (TTML3), <a href="https://w3c.github.io/ttml3/">Editor's
+                Draft</a>.
+              <p><b> Reference Draft:</b> Timed Text Markup Language 3 (TTML3),
+                <a href="https://w3c.github.io/ttml3/">Editor's Draft</a><br>
+                Associated 
+                  Call for Exclusion: none.<br>
+                Produced under <a href="https://www.w3.org/2016/05/timed-text-charter.html">2016 Working Group Charter</a>
+                </p>
+            </dd>
             <dt class="spec"><a href="https://www.w3.org/TR/ttml2/">Timed Text
                 Markup Language 2 (TTML2)<br>
               </a></dt>
@@ -224,7 +264,8 @@
             </dd>
             <dd><b>Adopted Working Draft:</b> Timed
               Text Markup Language 2 (TTML2), <a href="https://www.w3.org/TR/2018/CR-ttml2-20180313/">Candidate Recommendation, 13 March
-              2018.</a>
+              2018</a>.
+
               <p><b> Reference Draft:</b> Timed Text Markup Language 2 (TTML2),
                 <a href="https://www.w3.org/TR/2018/CR-ttml2-20180313/">Candidate Recommendation, 13 March 2018</a><br>
                 Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2018Mar/0005.html">
@@ -305,6 +346,12 @@
             <li><a href="https://www.w3.org/TR/ttml-imsc1.1/">TTML Profiles for Internet Media Subtitles and Captions (IMSC1.1)</a></li>
           </ul>
 
+          <p>The Working Group expects to publish new versions of 
+            <a href="http://www.w3.org/TR/ttml/">TTML</a>  
+            Recommendations on an annual basis, and to publish TTML
+            features in new Recommendations not explicitly listed above, within
+            the scope defined in this document.</p>
+            
           <div id="ig-other-deliverables">
             <h3> Other Deliverables </h3>
             <p> Other documents may be created such as: </p>
@@ -315,7 +362,8 @@
               <li>Primer or Best Practice documents to support web developers
                 when designing applications;</li>
               <li>Working Group Notes as needed;</li>
-              <li>Mapping to HTML5/CSS3.</li>
+              <li>Mapping to HTML5/CSS3;</li>
+              <li>Registries.</li>
             </ul>
             <p>Other documents may be updated such as:</p>
             <ul>
