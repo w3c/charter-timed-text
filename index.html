@@ -55,7 +55,7 @@
           <li><a href="#background">Background</a></li>
           <li><a href="#scope">Scope</a></li>
           <li><a href="#deliverables">Deliverables</a></li>
-		  <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#success-criteria">Success Criteria</a></li>
           <li><a href="#coordination">Coordination</a></li>
           <li><a href="#participation">Participation</a></li>
           <li><a href="#communication">Communication</a></li>
@@ -270,7 +270,10 @@
 
 	<section id="success-criteria">
 	  <h2>Success Criteria</h2>
-	  <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of every feature defined in the specification.</p>
+	  <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each
+      normative feature is expected to meet the requirements set out in
+      <a href="#advancement">§3.1</a> to demonstrate adequate
+      <a href="https://www.w3.org/Consortium/Process/#implementation-experience">implementation experience</a>.</p>
 
     <p>Each Recommendation-track Technical Report:</p>
 
@@ -286,8 +289,24 @@
     <p>There should be testing plans for each specification, starting from the earliest drafts. To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
     <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
 		recommendations for maximising accessibility in implementations.</p>
-	  <p>DROP?: <span class='todo'>Consider adding this clause if the Group does not intend to move to REC:</span> All new features should be supported by at least two intents to implement before being incorporated in the specification.</p>
-<!-- END: need to consider of -->
+    <section id="advancement">
+    <h3>Requirements for advancing the maturity level of features</h3>
+    <p>Within the requirements of the Process each new normative feature
+    will be considered as ready to advance to a higher maturity level if
+    its implementability has been demonstrated.</p>
+    <p>When considering suitability to advance any feature beyond
+    Candidate Recommendation, at least two factors of verification
+    MUST be demonstrated, which may come from any of:</p>
+    <ul>
+      <li>Presentation implementation</li>
+      <li>Content</li>
+      <li>Validating implementation</li>
+    </ul>
+    <p>For example, a feature MAY be advanced beyond Candidate Recommendation
+    if it has been demonstrated to be implementable on the basis of a single
+    open source implementation that successfully processes content from an
+    independent source.</p>
+    </section>
 	</section>
   
 
