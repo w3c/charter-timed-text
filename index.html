@@ -171,7 +171,6 @@
 
         <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
 
-<!-- copy from 2019 charter -->
 <div id="normative">
   <h3>New Normative Specifications</h3>
 
@@ -179,13 +178,20 @@
 
   <dl>
     <dt class="spec">
-      <a href="https://www.w3.org/TR/ttml3/">Timed Text Markup Language 3 (TTML3)</a>
+      Profiles of <a href="https://www.w3.org/TR/ttml2/">Timed Text Markup Language 2 (TTML2)</a>, and related specifications.
     </dt>
 
     <dd>
-      <p>This specification defines a content type that represents timed text media for the purpose of
-      interchange among authoring, distribution and playback systems. Timed text is textual information that is
-      intrinsically or extrinsically associated with timing information.</p>
+      <p>TTML2 can be used to support a variety of applications.
+        Each such application typically uses an associated subset of TTML2 features, known as a profile.
+        Similarly other related specifications may govern such applications,
+        for example by setting performance or complexity constraints.
+      </p>
+      <p>An example application would be the authoring and exchange of
+        timed text documents that support audio description or dubbing workflows. Such an application might define text associated with media at
+        various times, in one or more languages, as well as
+        any directives for rendering that text into audio.
+      </p>
     </dd>
 
     <dt id="webvtt" class="spec">
@@ -200,14 +206,6 @@
       and more generally any form of metadata that is time-aligned with audio or video content.</p>
     </dd>
 
-    <dt id="adpt" class="spec">TTML Profile for Audio Description</dt>
-
-    <dd>
-      <p>This specification defines a profile of [ <cite><a class="bibref" href=
-      "https://www.w3.org/TR/ttml2/">TTML2</a></cite> ] intended to support audio description script exchange
-      throughout the workflow including production of the script, rendering as voice by recording or text to
-      speech synthesis, and audio mixing.</p>
-    </dd>
   </dl>
 
   <p>The Working Group MAY develop additional Recommendation-track specifications.</p>
@@ -233,11 +231,18 @@
 
     <li>Primer or Best Practice documents to support web developers</li>
   </ul>
+
+  <p>The Working Group MAY create
+    <a href="https://www.w3.org/2021/Process-20211102/#registry-definition">registry definitions</a>
+    and <a href="https://www.w3.org/2021/Process-20211102/#registry-table">registry tables</a>
+    and MAY create such <a href="https://www.w3.org/2021/Process-20211102/#registry">registries</a> to replace or augment existing registries
+    created prior to the formalisation of the Registry track.
+  </p>
 </div>
 
         <section id="timeline">
           <h3>Timeline</h3>
-            <p>Current timelines are documented at [WG wiki page](https://www.w3.org/wiki/TimedText/Publications) and will be updated on an occasional basis.</p>
+            <p>Current timelines are documented at <a href="https://www.w3.org/wiki/TimedText/Publications">TTWG Publications wiki page</a> and will be updated on an occasional basis.</p>
         </section>
       </section>
 
