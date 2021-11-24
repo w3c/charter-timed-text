@@ -171,47 +171,27 @@
 
         <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
 
-<!-- leaving this section as example for update -->
-        <section id="normative">
-          <h3>
-            Normative Specifications
-          </h3>
-          <p>
-            The <i class="todo">(Working|Interest)</i> Group will deliver the following W3C normative specifications:
-          </p>
-          <dl>
-            <dt id="web-foo" class="spec"><a href="#">Web <i class="todo">[spec name]</i></a></dt>
-            <dd>
-              <p>This specification defines <i class="todo">[concrete description]</i>.</p>
-
-              <p class="draft-status"><b>Draft state:</b> <i class="todo">[No draft | <a href="#">Use Cases and Requirements</a> | <a href="#">Editor's Draft</a> | <a href="#">Member Submission</a> | <a href="#">Adopted from WG/CG Foo</a> | <a href="#">Working Draft</a>]</i></p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
-   <dl><dt>
-    <p class="todo">Per <a href="https://www.w3.org/Consortium/Process/#WGCharter">5.2.6</a>, for every Recommendation Track deliverable that continues work on a Working Draft (WD) published under any other Charter (including a predecessor group of the same name), for which there is an existing <a href='https://www.w3.org/Consortium/Process/#exclusion-draft'>Exclusion Draft</a>: </p>
-      <p><b>Adopted Draft:</b> The <span class="todo">title, stable URL, and publication date of the <a href="https://www.w3.org/Consortium/Process/#adopted-draft">Adopted Draft</a></span> which will serve as the basis for work on the deliverable.
-      <p><b>Exclusion Draft:</b> The <span class="todo">title, stable URL, and publication date of the most recent <a href='https://www.w3.org/Consortium/Process/#exclusion-draft'>Exclusion Draft</a></span>.
-        <span class="todo">Exclusion period <b>began</b>; Exclusion period <b>ended</b>.</span> <span class='todo'>(this <a href="https://www.w3.org/2004/01/pp-impl/charter-assistant?wgid=32061">charter assistant</a> helps in producing the list. use the proper <a href='https://www.w3.org/2004/01/pp-impl/'>wgid</a>)</span>
-      <p><b>Other Charter:</b> The  <span class="todo">stable URL of the <a href='https://www.w3.org/Consortium/Process/#other-charter'>Working Group charter</a></span> under which the most recent Exclusion Draft was published.
-    </dd>
-              </dl></dl>
-        </section>
-<!-- example section ends here -->
-
-<!-- copy from 2019 charter -->
 <div id="normative">
-  <h3>New Technical Reports</h3>
+  <h3>New Normative Specifications</h3>
 
-  <p>The Working Group intends to develop the following Technical Reports:</p>
+  <p>The Working Group intends to develop the following new W3C normative specifications:</p>
 
   <dl>
     <dt class="spec">
-      <a href="https://www.w3.org/TR/ttml3/">Timed Text Markup Language 3 (TTML3)</a>
+      Profiles of <a href="https://www.w3.org/TR/ttml2/">Timed Text Markup Language 2 (TTML2)</a>, and related specifications.
     </dt>
 
     <dd>
-      <p>This specification defines a content type that represents timed text media for the purpose of
-      interchange among authoring, distribution and playback systems. Timed text is textual information that is
-      intrinsically or extrinsically associated with timing information.</p>
+      <p>TTML2 can be used to support a variety of applications.
+        Each such application typically uses an associated subset of TTML2 features, known as a profile.
+        Similarly other related specifications may govern such applications,
+        for example by setting performance or complexity constraints.
+      </p>
+      <p>An example application would be the authoring and exchange of
+        timed text documents that support audio description or dubbing workflows. Such an application might define text associated with media at
+        various times, in one or more languages, as well as
+        any directives for rendering that text into audio.
+      </p>
     </dd>
 
     <dt id="webvtt" class="spec">
@@ -226,32 +206,23 @@
       and more generally any form of metadata that is time-aligned with audio or video content.</p>
     </dd>
 
-    <dt id="adpt" class="spec">TTML Profile for Audio Description</dt>
-
-    <dd>
-      <p>This specification defines a profile of [ <cite><a class="bibref" href=
-      "https://www.w3.org/TR/ttml2/">TTML2</a></cite> ] intended to support audio description script exchange
-      throughout the workflow including production of the script, rendering as voice by recording or text to
-      speech synthesis, and audio mixing.</p>
-    </dd>
   </dl>
 
-  <p>The Working Group MAY develop additional Recommendation-track and non-Recommendation-track Technical
-  Reports.</p>
+  <p>The Working Group MAY develop additional Recommendation-track specifications.</p>
 </div>
 
 <div id="revisions">
-  <h3>Existing Technical Reports</h3>
+  <h3>Existing Normative Specifications</h3>
 
   <p>The Working Group MAY update its <a href="https://www.w3.org/wiki/TimedText/Publications">previously
-  published Technical Reports</a>.</p>
+  published Normative Specifications</a>.</p>
 </div>
 <!-- END here: copy from 2019 charter -->
 
 <div id="ig-other-deliverables">
   <h3>Other deliverables</h3>
 
-  <p>The Working Group MAY create documents that are not Technical Reports, including:</p>
+  <p>The Working Group MAY create or update documents that are not Normative Specifications, including Working Group Notes and other publications such as:</p>
 
   <ul>
     <li>Use case and requirement documents</li>
@@ -260,11 +231,18 @@
 
     <li>Primer or Best Practice documents to support web developers</li>
   </ul>
+
+  <p>The Working Group MAY create
+    <a href="https://www.w3.org/2021/Process-20211102/#registry-definition">registry definitions</a>
+    and <a href="https://www.w3.org/2021/Process-20211102/#registry-table">registry tables</a>
+    and MAY create such <a href="https://www.w3.org/2021/Process-20211102/#registry">registries</a> to replace or augment existing registries
+    created prior to the formalisation of the Registry track.
+  </p>
 </div>
 
         <section id="timeline">
           <h3>Timeline</h3>
-            <p>Current timelines are documented at [WG wiki page](https://www.w3.org/wiki/TimedText/Publications) and will be updated on an occasional basis.</p>
+            <p>Current timelines are documented at <a href="https://www.w3.org/wiki/TimedText/Publications">TTWG Publications wiki page</a> and will be updated on an occasional basis.</p>
         </section>
       </section>
 
@@ -398,9 +376,6 @@
           major changes occur in a specification, and SHOULD be issued at least 3 months before <a href=
           "https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a>.</p>          
 
-          <p class="issue"><b>Note:</b> Do not list horizontal groups here, only specific WGs relevant to your work.</p>
-          <p class="issue"><b>Note:</b> Do not bury normative text inside the liaison section.
-            Instead, put it in the scope section.</p>
         </section>
 
         <section>
@@ -474,7 +449,7 @@
           The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
         </p>
         <p>
-          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy-20200915/">W3C Patent Policy</a> (<i class="todo">link need to be replaced by 2021 version if any</i>).
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy-20200915/">W3C Patent Policy</a>.
         </p>
         <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
           W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
@@ -670,6 +645,13 @@
                 <td>TTML3, TTML Profile for Audio Description
                 </td>
               </tr>  
+
+              <tr>
+                <th><a href="https://www.w3.org/2020/12/timed-text-wg-charter.html">Rechartered</a></th>
+                <td>2020-12-15</td>
+                <td>2021-12-31</td>
+                <td>New Patent Policy</td>
+              </tr>
 
               <tr>
                 <th>
