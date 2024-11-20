@@ -91,7 +91,7 @@
               Start date
             </th>
             <td>
-              8 April 2023
+              8 April 2025
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -99,7 +99,7 @@
               End date
             </th>
             <td>
-              7 April 2025
+              7 April 2027
             </td>
           </tr>
           <tr>
@@ -121,7 +121,7 @@
           </tr>
           <tr>
             <th>Meeting Schedule</th>
-            <td><strong>Teleconferences:</strong>Usually once per week.<br>
+            <td><strong>Teleconferences:</strong>Usually once per week or once per two weeks.<br>
             <strong>Face-to-face:</strong> Usually no more than twice per year, including once during the W3C's annual
             Technical Plenary week.</td>
           </tr>
@@ -129,7 +129,9 @@
       </section>
 
       <section id="background" class="background">
-        <p>The Working Group will develop W3C Recommendations for the representation of timed text, including the <a href="https://www.w3.org/TR/ttml/">Timed Text Markup Language</a> (TTML) and <a href="https://www.w3.org/TR/webvtt/">WebVTT</a> (Web Video Text Tracks).</p>
+        <p>The Working Group will develop W3C Recommendations for the representation of timed text,
+          including the <a href="https://www.w3.org/TR/ttml/">Timed Text Markup Language</a> (TTML) and
+          <a href="https://www.w3.org/TR/webvtt/">WebVTT</a> (Web Video Text Tracks).</p>
       </section>
 
       <section id="scope" class="scope">
@@ -152,7 +154,8 @@
         <p>More detailed milestones and updated publication schedules are available on the <a href=
           "https://www.w3.org/wiki/TimedText/Publications">group publication status page</a>.</p>
 
-        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval.
+          <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
 
 <div id="normative">
   <h3>New Normative Specifications</h3>
@@ -170,10 +173,9 @@
         Similarly other related specifications may govern such applications,
         for example by setting performance or complexity constraints.
       </p>
-      <p>An example application would be the authoring and exchange of
-        timed text documents that support audio description or dubbing workflows, 
-        under development as the <a href="https://github.com/w3c/dapt">Dubbing and Audio description Profiles of TTML2</a> specification.
-        Such an application might define text associated with media at
+      <p>Historical example applications are the IMSC profiles that support subtitles and captions,
+        and the DAPT profile that supports audio description and dubbing workflows.
+        Applications might define text associated with media at
         various times, in one or more languages, as well as
         any directives for rendering that text into audio.
       </p>
@@ -191,7 +193,7 @@
       <p>This specification defines WebVTT, the Web Video Text Tracks format. Its main use is for marking up
       external text track resources in connection with the HTML &lt;track&gt; element. WebVTT files provide
       captions or subtitles for video content, and also text video descriptions <a href=
-      "http://www.w3.org/TR/media-accessibility-reqs/">[MAUR]</a>, chapters for content navigation,
+      "http://www.w3.org/TR/media-accessibility-reqs/">[maur]</a>, chapters for content navigation,
       and more generally any form of metadata that is time-aligned with audio or video content.</p>
       <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webvtt1/">Candidate Recommendation</a></p>
       <p><b>Adopted Working Draft:</b> <a href="https://www.w3.org/TR/2019/CR-webvtt1-20190404/">WebVTT: The Web Video Text Tracks Format</a> (4 April 2019)</p>
@@ -204,14 +206,33 @@
       <a href="https://www.w3.org/TR/ttml-imsc1.3/">TTML Profiles for Internet Media Subtitles and Captions 1.3</a>
     </dt>
     <dd>
-      <p>This specification defines two profiles of [[ttml2]]:
+      <p>This specification defines two profiles of <a href="https://www.w3.org/TR/ttml2/">[ttml2]</a>:
         a text-only profile and an image-only profile.
         These profiles are intended to be used across subtitle and caption delivery applications worldwide,
         thereby simplifying interoperability, consistent rendering and conversion to other subtitling and captioning formats.</p>
-      <p>This specification improves on [[ttml-imsc1.2]] by supporting additional contemporary practices,
-        while retaining compatibility with [[ttml-imsc1.2]] documents.</p>
+      <p>This specification improves on <a href="https://www.w3.org/TR/ttml-imsc1.2/">[ttml-imsc1.2]</a> by supporting additional contemporary practices,
+        while retaining compatibility with <a href="https://www.w3.org/TR/ttml-imsc1.2/">[ttml-imsc1.2]</a> documents.</p>
       <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/ttml-imsc1.3/">Working Draft</a></p>
       <p><b>Adopted Working Draft:</b> <a href="https://www.w3.org/TR/2022/WD-imsc-hrm-20220106/">IMSC Hypothetical Render Model</a> (6 January 2022)</p>
+      <p><b>Produced under Working Group Charter:</b> <a href="https://www.w3.org/2023/04/timed-text-wg-charter.html">2023-2025 charter period of the Timed Text Working group</a></p>
+      <p><b>Exclusion Draft:</b> none</p>
+    </dd>
+
+    <dt id="dapt" class="spec">
+      <a href="https://www.w3.org/TR/dapt/">Dubbing and Audio description Profiles of TTML2</a>
+    </dt>
+    <dd>
+      <p>This specification defines DAPT, a TTML-based file format for the exchange of timed text content in dubbing and audio description workflows.</p>
+      <p>This specification defines a text-based profile of the Timed Text Markup Language version 2.0 <a href="https://www.w3.org/TR/ttml2/">[ttml2]</a>
+        intended to support dubbing and audio description workflows worldwide,
+        to meet the requirements defined in <a href="https://www.w3.org/TR/dapt-reqs/">[dapt-reqs]</a>,
+        and to permit usage of visual presentation features within <a href="https://www.w3.org/TR/ttml2/">[ttml2]</a> and its profiles,
+        for example those in <a href="https://www.w3.org/TR/ttml-imsc1.2/">[ttml-imsc1.2]</a>.</p>
+      <p>DAPT defines <a href="https://www.w3.org/policies/process/20231103/#registry">registries</a>.</p>
+      <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/dapt/">Working Draft</a></p>
+      <p><b>Adopted Working Draft:</b>
+        <span class="todo">TODO: update this</span>
+        <a href="https://www.w3.org/TR/2024/WD-dapt-20241114/">Dubbing and Audio description Profiles of TTML2</a> (14 November 2024)</p>
       <p><b>Produced under Working Group Charter:</b> <a href="https://www.w3.org/2023/04/timed-text-wg-charter.html">2023-2025 charter period of the Timed Text Working group</a></p>
       <p><b>Exclusion Draft:</b> none</p>
     </dd>
@@ -259,9 +280,9 @@
   </ul>
 
   <p>The Working Group MAY create
-    <a href="https://www.w3.org/2021/Process-20211102/#registry-definition">registry definitions</a>
-    and <a href="https://www.w3.org/2021/Process-20211102/#registry-table">registry tables</a>
-    and MAY create such <a href="https://www.w3.org/2021/Process-20211102/#registry">registries</a> to replace or augment existing registries
+    <a href="https://www.w3.org/policies/process/20231103/#registry-definition">registry definitions</a>
+    and <a href="https://www.w3.org/policies/process/20231103/#registry-table">registry tables</a>
+    and MAY create such <a href="https://www.w3.org/policies/process/20231103/#registry">registries</a> to replace or augment existing registries
     created prior to the formalisation of the Registry track.
   </p>
 </div>
@@ -463,6 +484,16 @@
               </dt>
     
               <dd>SA WG4 Codec deals with the specifications for speech, audio, video, and multimedia codecs, in both circuit-switched and packet-switched environments.</dd>
+
+              <dt>
+                <a href="https://www.arib.or.jp/">Association of Radio Industries and Business (ARIB)</a>
+              </dt>
+              <dd>
+                ARIB develops standards for telecommunication and broadcasting, including
+                <a href="https://www.arib.or.jp/english/std_tr/broadcasting/std-b69.html">ARIB STD-B69</a>,
+                &quot;Exchange Format Of The Digital Closed Caption File For Digital Television Broadcasting System&quot;
+                that defines the ARIB-TTML profile of TTML.
+              </dd>
             </dl>
 
         </section>
