@@ -91,7 +91,7 @@
               Start date
             </th>
             <td>
-              8 April 2025
+              <i class="todo">TBD</i>
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -99,7 +99,7 @@
               End date
             </th>
             <td>
-              7 April 2027
+              <i class="todo">TBD (Start date + 2 years)</i>
             </td>
           </tr>
           <tr>
@@ -129,9 +129,23 @@
       </section>
 
       <section id="background" class="background">
+        <h2>Motivation and Background</h2>
         <p>The Working Group will develop W3C Recommendations for the representation of timed text,
           including the <a href="https://www.w3.org/TR/ttml/">Timed Text Markup Language</a> (TTML) and
           <a href="https://www.w3.org/TR/webvtt/">WebVTT</a> (Web Video Text Tracks).</p>
+        <p>Timed text describes primarily textual content that changes along a timeline,
+          often set by an external object such as a video or audio resource.
+          It is used in accessibility contexts, for &quot;hard of hearing&quot; captions or subtitles as
+          an alternate representation of the audio, or (audio) description as
+          an alternate representation of the video,
+          and in localisation contexts, for translation subtitles.
+          Another use is to carry other information considered to be metadata that changes over time.
+        </p>
+        <p>Web applications may use timed text resources either using APIs provided by the
+          user agent, such as Text Tracks and Text Track Cues, or using client scripts.
+          The goal of the Timed Text Working Group is to define the resource formats for
+          carrying timed text.
+        </p>
       </section>
 
       <section id="scope" class="scope">
@@ -180,6 +194,23 @@
         any directives for rendering that text into audio.
       </p>
     </dd>
+
+    <dt id="imsc-1-3" class="spec">
+      <a href="https://www.w3.org/TR/ttml-imsc1.3/">TTML Profiles for Internet Media Subtitles and Captions 1.3</a>
+    </dt>
+    <dd>
+      <p>This specification defines two profiles of <a href="https://www.w3.org/TR/ttml2/">[ttml2]</a>:
+        a text-only profile and an image-only profile.
+        These profiles are intended to be used across subtitle and caption delivery applications worldwide,
+        thereby simplifying interoperability, consistent rendering and conversion to other subtitling and captioning formats.</p>
+      <p>This specification improves on <a href="https://www.w3.org/TR/ttml-imsc1.2/">[ttml-imsc1.2]</a> by supporting additional contemporary practices,
+        while retaining compatibility with <a href="https://www.w3.org/TR/ttml-imsc1.2/">[ttml-imsc1.2]</a> documents.</p>
+      <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/ttml-imsc1.3/">Working Draft</a></p>
+      <p><b>Adopted Working Draft:</b> <i class="todo">Add Adopted Working Draft, when there is one.</i></p>
+      <p><b>Produced under Working Group Charter:</b> <a href="https://www.w3.org/2023/04/timed-text-wg-charter.html">2023-2025 charter period of the Timed Text Working group</a></p>
+      <p><b>Exclusion Draft:</b> none</p>
+    </dd>
+
   </dl>
 
   <h3>New Normative Specifications Continuously Under Development</h3>
@@ -202,22 +233,6 @@
       associated <a href="https://www.w3.org/mid/cfe-6964-e72ae545706a44a8b42f44f11fc0b2e98a4feca3@w3.org">Call for Exclusion</a> on 2019-04-04 ended on 2019-06-03</p>
     </dd>
 
-    <dt id="imsc-1-3" class="spec">
-      <a href="https://www.w3.org/TR/ttml-imsc1.3/">TTML Profiles for Internet Media Subtitles and Captions 1.3</a>
-    </dt>
-    <dd>
-      <p>This specification defines two profiles of <a href="https://www.w3.org/TR/ttml2/">[ttml2]</a>:
-        a text-only profile and an image-only profile.
-        These profiles are intended to be used across subtitle and caption delivery applications worldwide,
-        thereby simplifying interoperability, consistent rendering and conversion to other subtitling and captioning formats.</p>
-      <p>This specification improves on <a href="https://www.w3.org/TR/ttml-imsc1.2/">[ttml-imsc1.2]</a> by supporting additional contemporary practices,
-        while retaining compatibility with <a href="https://www.w3.org/TR/ttml-imsc1.2/">[ttml-imsc1.2]</a> documents.</p>
-      <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/ttml-imsc1.3/">Working Draft</a></p>
-      <p><b>Adopted Working Draft:</b> <a href="https://www.w3.org/TR/2022/WD-imsc-hrm-20220106/">IMSC Hypothetical Render Model</a> (6 January 2022)</p>
-      <p><b>Produced under Working Group Charter:</b> <a href="https://www.w3.org/2023/04/timed-text-wg-charter.html">2023-2025 charter period of the Timed Text Working group</a></p>
-      <p><b>Exclusion Draft:</b> none</p>
-    </dd>
-
     <dt id="dapt" class="spec">
       <a href="https://www.w3.org/TR/dapt/">Dubbing and Audio description Profiles of TTML2</a>
     </dt>
@@ -231,10 +246,11 @@
       <p>DAPT defines <a href="https://www.w3.org/policies/process/20231103/#registry">registries</a>.</p>
       <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/dapt/">Working Draft</a></p>
       <p><b>Adopted Working Draft:</b>
-        <span class="todo">TODO: update this</span>
+        <i class="todo">TODO: update this</i>
         <a href="https://www.w3.org/TR/2024/WD-dapt-20241114/">Dubbing and Audio description Profiles of TTML2</a> (14 November 2024)</p>
       <p><b>Produced under Working Group Charter:</b> <a href="https://www.w3.org/2023/04/timed-text-wg-charter.html">2023-2025 charter period of the Timed Text Working group</a></p>
-      <p><b>Exclusion Draft:</b> none</p>
+      <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2023/WD-dapt-20230425/">https://www.w3.org/TR/2023/WD-dapt-20230425/</a><br/>
+      associated <a href="https://lists.w3.org/Archives/Public/public-tt/2023Apr/0010.html">Call for Exclusion</a> on 2023-04-25 ended on 2023-09-22</p>
     </dd>
 
     <dt id="ttml2-2" class="spec">
